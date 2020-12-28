@@ -1,0 +1,22 @@
+{
+  "name": "@lipemat/stylelint-config",
+  "version": "1.0.0-beta.1",
+  "description": "Stylelint configuration for all @lipemat packages",
+  "engines": {
+    "node": ">=13.0.0 <15.0.0"
+  },
+  "main": "index.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipemat/stylelint-config.git"
+  },
+  "author": "lipemat <mat@matlipe.com>",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-wordpress": "^13.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
