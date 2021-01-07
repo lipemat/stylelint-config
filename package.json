@@ -13,8 +13,8 @@
   "author": "lipemat <mat@matlipe.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "^9.10.1",
-    "stylelint-config-wordpress": "^13.1.0"
+    "@wordpress/stylelint-config": "^18.0.0",
+    "stylelint": "^9.10.1"
   },
   "publishConfig": {
     "access": "public"

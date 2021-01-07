@@ -11,9 +11,9 @@ Stylelint configuration for all `@lipemat` packages.
 
 ## Usage
 
-Used directly inside of `@lipemat/js-boilerplate` and `@lipemat/postcss-boilerplate` so it does not need to be added to your project,
+Used directly inside of `@lipemat/postcss-boilerplate` so it does not need to be added to your project,
 although if you are using Yarn V2 with PNP, you will need to add `stylelint` to your package to
-allow PHPStorm to use ESLint.
+allow PHPStorm to use Stylelint.
 
 ```json
 {
