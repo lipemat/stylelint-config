@@ -3,6 +3,10 @@
 module.exports = {
 	'extends': '@wordpress/stylelint-config',
 	'rules': {
+		'declaration-property-unit-whitelist': null,
+		'declaration-property-unit-allowed-list': {
+			'line-height': [ 'px' ],
+		},
 		'function-parentheses-space-inside': null,
 		'indentation': 'tab',
 		'no-invalid-double-slash-comments': null,
