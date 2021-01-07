@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@wordpress/stylelint-config": "^18.0.0",
-    "stylelint": "^9.10.1"
+    "stylelint": "^13.7.0"
   },
   "publishConfig": {
     "access": "public"

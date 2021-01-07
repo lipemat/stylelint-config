@@ -18,7 +18,7 @@ allow PHPStorm to use Stylelint.
 ```json
 {
   "dependencies": {
-    "stylelint": "^9.10.1"
+    "stylelint": "^13.7.0"
   }
 }
 
