@@ -9,6 +9,7 @@ module.exports = {
 		},
 		'function-parentheses-space-inside': null,
 		'indentation': 'tab',
+		'no-descending-specificity': null,
 		'no-invalid-double-slash-comments': null,
 		'number-leading-zero': null,
 		'property-no-unknown': [
