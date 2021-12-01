@@ -30,7 +30,6 @@ module.exports = {
 				],
 			},
 		],
-		'selector-class-pattern': null,
 		'selector-pseudo-class-no-unknown': [
 			true,
 			{
