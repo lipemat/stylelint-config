@@ -1,6 +1,6 @@
 {
   "name": "@lipemat/stylelint-config",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Stylelint configuration for all @lipemat packages",
   "engines": {
     "node": ">=13.0.0"
