@@ -19,6 +19,11 @@ module.exports = {
 		'no-descending-specificity': null,
 		'no-invalid-double-slash-comments': null,
 		'number-leading-zero': null,
+		'order/order': [
+			'custom-properties',
+			'declarations'
+		],
+		'order/properties-alphabetical-order': true,
 		'property-no-unknown': [
 			true,
 			{

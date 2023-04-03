@@ -18,7 +18,8 @@
   "author": "lipemat <mat@matlipe.com>",
   "license": "MIT",
   "dependencies": {
-    "@wordpress/stylelint-config": "^20.0.2"
+    "@wordpress/stylelint-config": "^21.13.0",
+    "stylelint-order": "^6.0.3"
   },
   "peerDependencies": {
     "stylelint": "^14.2"
