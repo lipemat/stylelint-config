@@ -2,6 +2,9 @@
 
 module.exports = {
 	'extends': '@wordpress/stylelint-config',
+	'plugins': [
+		'stylelint-order'
+	],
 	'rules': {
 		'at-rule-empty-line-before': [
 			'always',
