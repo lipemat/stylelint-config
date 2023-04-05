@@ -22,11 +22,19 @@ module.exports = {
 		'no-descending-specificity': null,
 		'no-invalid-double-slash-comments': null,
 		'number-leading-zero': null,
-		'order/order': [
-			'custom-properties',
-			'declarations'
+		"order/order": [
+			"custom-properties",
+			"declarations"
 		],
-		'order/properties-alphabetical-order': true,
+		"order/properties-order": [
+			[
+				"composes"
+			],
+			{
+				"unspecified": "bottomAlphabetical"
+			}
+		],
+		"order/properties-alphabetical-order": false,
 		'property-no-unknown': [
 			true,
 			{
