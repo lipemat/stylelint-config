@@ -34,7 +34,7 @@ module.exports = {
 				"unspecified": "bottomAlphabetical"
 			}
 		],
-		"order/properties-alphabetical-order": false,
+		"order/properties-alphabetical-order": null,
 		'property-no-unknown': [
 			true,
 			{
