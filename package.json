@@ -34,8 +34,5 @@
   "peerDependencies": {
     "stylelint": "^14.2"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "packageManager": "yarn@3.6.1"
 }
