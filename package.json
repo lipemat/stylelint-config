@@ -2,8 +2,18 @@
   "name": "@lipemat/stylelint-config",
   "version": "2.0.1",
   "description": "Stylelint configuration for all @lipemat packages",
+  "author": "Mat Lipe",
+  "license": "MIT",
   "engines": {
-    "node": ">=13.0.0"
+    "node": ">=16.14.2"
+  },
+  "bugs": {
+    "url": "https://github.com/lipemat/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/lipemat/stylelint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipemat/stylelint-config.git"
   },
   "main": "index.js",
   "files": [
@@ -11,12 +21,6 @@
     "README.md",
     "index.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lipemat/stylelint-config.git"
-  },
-  "author": "lipemat <mat@matlipe.com>",
-  "license": "MIT",
   "scripts": {
     "test": "jest --config ./jest.config.js"
   },
