@@ -48,7 +48,7 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 		expect( warnings[ 1 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
 	} );
 
-	test( 'Should error if custom properties are combined', async () => {
+	test( 'Custom properties fallback lint is disabled.', async () => {
 		const {
 			results: [ {warnings, errored, parseErrors} ],
 		} = await lint( {
@@ -56,13 +56,9 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 			config,
 		} );
 
-		expect( errored ).toEqual( true );
+		expect( errored ).toEqual( false );
 		expect( parseErrors ).toHaveLength( 0 );
-		expect( warnings ).toHaveLength( 1 );
-
-		expect( warnings[ 0 ].line ).toEqual( 5 );
-		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+		expect( warnings ).toHaveLength( 0 );
 	} );
 
 	test( 'Should error if flex-wrap is not defined.', async () => {

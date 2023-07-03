@@ -39,7 +39,7 @@ module.exports = {
 		'plugin/use-defensive-css': [ true, {
 			'accidental-hover': true,
 			'background-repeat': true,
-			'custom-property-fallbacks': true,
+			'custom-property-fallbacks': false,
 			'flex-wrapping': true,
 			'scroll-chaining': true,
 			'vendor-prefix-grouping': true
