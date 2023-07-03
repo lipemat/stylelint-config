@@ -1,0 +1,16 @@
+/**
+ * @link https://github.com/yuschick/stylelint-plugin-defensive-css#flex-wrapping
+ */
+div {
+	display: flex;
+}
+
+#next {
+	display: flex;
+	flex-direction: row;
+}
+
+#more {
+	display: flex;
+	flex-flow: row;
+}

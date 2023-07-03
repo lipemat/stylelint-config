@@ -1,0 +1,6 @@
+/**
+ * @link https://github.com/yuschick/stylelint-plugin-defensive-css#custom-property-fallbacks
+ */
+div {
+	color: var(--color-primary);
+}

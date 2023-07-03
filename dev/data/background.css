@@ -1,0 +1,10 @@
+/**
+ * @link https://github.com/yuschick/stylelint-plugin-defensive-css#background-repeat
+ */
+div {
+	background: url(./some-image.jpg) #000 top center;
+}
+
+#other {
+	background-image: url(./some-image.jpg);
+}

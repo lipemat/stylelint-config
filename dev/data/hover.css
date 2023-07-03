@@ -1,0 +1,12 @@
+/**
+ * @link https://github.com/yuschick/stylelint-plugin-defensive-css#accidental-hover
+ */
+.fail-btn:hover {
+	color: #000;
+}
+
+@media (min-width: 1px) {
+	.fail-btn:hover {
+		color: #000;
+	}
+}

@@ -3,7 +3,8 @@
 module.exports = {
 	'extends': '@wordpress/stylelint-config',
 	'plugins': [
-		'stylelint-order'
+		'stylelint-order',
+		'stylelint-plugin-defensive-css'
 	],
 	'rules': {
 		'at-rule-empty-line-before': [
@@ -24,17 +25,25 @@ module.exports = {
 		'number-leading-zero': null,
 		"order/order": [
 			"custom-properties",
-			"declarations"
+			'declarations'
 		],
-		"order/properties-order": [
+		'order/properties-order': [
 			[
-				"composes"
+				'composes'
 			],
 			{
-				"unspecified": "bottomAlphabetical"
+				'unspecified': 'bottomAlphabetical'
 			}
 		],
-		"order/properties-alphabetical-order": null,
+		'order/properties-alphabetical-order': null,
+		'plugin/use-defensive-css': [ true, {
+			'accidental-hover': true,
+			'background-repeat': true,
+			'custom-property-fallbacks': true,
+			'flex-wrapping': true,
+			'scroll-chaining': true,
+			'vendor-prefix-grouping': true
+		} ],
 		'property-no-unknown': [
 			true,
 			{

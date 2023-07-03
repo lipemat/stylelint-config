@@ -1,0 +1,7 @@
+/**
+ * @link https://github.com/yuschick/stylelint-plugin-defensive-css#vendor-prefix-grouping
+ */
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+	color: #222;
+}

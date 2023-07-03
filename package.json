@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@wordpress/stylelint-config": "^21.13.0",
-    "stylelint-order": "^6.0.3"
+    "stylelint-order": "^6.0.3",
+    "stylelint-plugin-defensive-css": "^0.8.1"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
