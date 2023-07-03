@@ -17,14 +17,24 @@
   },
   "author": "lipemat <mat@matlipe.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --config ./jest.config.js"
+  },
   "dependencies": {
     "@wordpress/stylelint-config": "^21.13.0",
     "stylelint-order": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "jest": "^29.5.0",
+    "jest-preset-stylelint": "^6.1.0",
+    "stylelint": "^14.2"
   },
   "peerDependencies": {
     "stylelint": "^14.2"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
