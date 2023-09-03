@@ -37,7 +37,7 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( errored ).toEqual( true );
 		expect( parseErrors ).toHaveLength( 0 );
-		expect( warnings ).toHaveLength( 2 );
+		expect( warnings ).toHaveLength( 3 );
 
 		expect( warnings[ 0 ].line ).toEqual( 4 );
 		expect( warnings[ 0 ].column ).toEqual( 1 );
@@ -46,6 +46,10 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 		expect( warnings[ 1 ].line ).toEqual( 9 );
 		expect( warnings[ 1 ].column ).toEqual( 2 );
 		expect( warnings[ 1 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
+
+		expect( warnings[ 2 ].line ).toEqual( 16 );
+		expect( warnings[ 2 ].column ).toEqual( 3 );
+		expect( warnings[ 2 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
 	} );
 
 	test( 'Custom properties fallback lint is disabled.', async () => {

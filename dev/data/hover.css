@@ -10,3 +10,23 @@
 		color: #000;
 	}
 }
+
+@media (hover: none) {
+	div {
+		.fail-btn:hover {
+			color: #000;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.fail-btn:hover {
+		color: #000;
+	}
+}
+
+@media (any-hover: hover) {
+	.fail-btn:hover {
+		color: #000;
+	}
+}
