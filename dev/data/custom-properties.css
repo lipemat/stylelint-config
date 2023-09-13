@@ -2,5 +2,10 @@
  * @link https://github.com/yuschick/stylelint-plugin-defensive-css#custom-property-fallbacks
  */
 div {
+	background: var(--wp--preset--color--pale-pink, #f78da7);
+	background: var(--wp--preset--color--pale-pink);
 	color: var(--color-primary);
+	color: var( --wp--preset--color--vivid-red ) !important;
+	color: var( --wp--preset--color--vivid-red, #dc3232 ) !important;
+
 }

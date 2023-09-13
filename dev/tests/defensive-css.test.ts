@@ -52,7 +52,8 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 		expect( warnings[ 2 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
 	} );
 
-	test( 'Custom properties fallback lint is disabled.', async () => {
+
+	test( 'Custom properties', async () => {
 		const {
 			results: [ {warnings, errored, parseErrors} ],
 		} = await lint( {
@@ -60,10 +61,19 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 			config,
 		} );
 
-		expect( errored ).toEqual( false );
+		expect( errored ).toEqual( true );
 		expect( parseErrors ).toHaveLength( 0 );
-		expect( warnings ).toHaveLength( 0 );
+		expect( warnings ).toHaveLength( 2 );
+
+		expect( warnings[ 0 ].line ).toEqual( 6 );
+		expect( warnings[ 0 ].column ).toEqual( 2 );
+		expect( warnings[ 0 ].text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+
+		expect( warnings[ 1 ].line ).toEqual( 8 );
+		expect( warnings[ 0 ].column ).toEqual( 2 );
+		expect( warnings[ 0 ].text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
 	} );
+
 
 	test( 'Should error if flex-wrap is not defined.', async () => {
 		const {
@@ -131,4 +141,5 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 		expect( warnings[ 0 ].column ).toEqual( 1 );
 		expect( warnings[ 0 ].text ).toEqual( 'Separate different vendor prefixes into their own rules. (plugin/use-defensive-css)' );
 	} );
+
 } );

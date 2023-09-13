@@ -39,7 +39,12 @@ module.exports = {
 		'plugin/use-defensive-css': [ true, {
 			'accidental-hover': true,
 			'background-repeat': true,
-			'custom-property-fallbacks': false,
+			'custom-property-fallbacks': [ true, {
+				'ignore': [
+					// Ignore all custom properties that don't start with `--wp--preset`.
+					/^((?!--wp--preset).)*$/
+				]
+			} ],
 			'flex-wrapping': true,
 			'scroll-chaining': true,
 			'vendor-prefix-grouping': true
