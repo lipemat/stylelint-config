@@ -1,6 +1,6 @@
 {
   "name": "@lipemat/stylelint-config",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Stylelint configuration for all @lipemat packages",
   "author": "Mat Lipe",
   "license": "MIT",
