@@ -63,15 +63,17 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( errored ).toEqual( true );
 		expect( parseErrors ).toHaveLength( 0 );
-		expect( warnings ).toHaveLength( 2 );
+		expect( warnings ).toHaveLength( 4 );
 
-		expect( warnings[ 0 ].line ).toEqual( 6 );
-		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+		warnings.forEach( warning => {
+			expect( warning.column ).toEqual( 2 );
+			expect( warning.text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+		} );
 
-		expect( warnings[ 1 ].line ).toEqual( 8 );
-		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].line ).toEqual( 7 );
+		expect( warnings[ 1 ].line ).toEqual( 9 );
+		expect( warnings[ 2 ].line ).toEqual( 11 );
+		expect( warnings[ 3 ].line ).toEqual( 13 );
 	} );
 
 

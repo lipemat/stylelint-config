@@ -1,11 +1,17 @@
 /**
  * @link https://github.com/yuschick/stylelint-plugin-defensive-css#custom-property-fallbacks
  */
+/*noinspection ALL*/
 div {
 	background: var(--wp--preset--color--pale-pink, #f78da7);
 	background: var(--wp--preset--color--pale-pink);
 	color: var(--color-primary);
 	color: var( --wp--preset--color--vivid-red ) !important;
 	color: var( --wp--preset--color--vivid-red, #dc3232 ) !important;
-
+	lighting-color: var(   --wp-admin-theme-color );
+	lighting-color: var(   --wp-admin-theme-color, #dc3232);
+	lighting-color: var(--wp-block-synced-color) !important;
+	lighting-color: var(--custom--wp--color);
+	lighting-color: var( --custom--wp--color );
+	lighting-color: var(   --custom--wp--color );
 }

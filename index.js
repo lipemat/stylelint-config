@@ -41,8 +41,8 @@ module.exports = {
 			'background-repeat': true,
 			'custom-property-fallbacks': [ true, {
 				'ignore': [
-					// Ignore all custom properties that don't start with `--wp--preset`.
-					/^((?!--wp--preset).)*$/
+					// Ignore all custom properties that don't contain `--wp-`.
+					/^((?!\( *?--wp-).)*$/
 				]
 			} ],
 			'flex-wrapping': true,
