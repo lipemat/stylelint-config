@@ -20,11 +20,11 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( warnings[ 0 ].line ).toEqual( 5 );
 		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Ensure a background-repeat property is defined when using a background image. (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].text ).toEqual( 'Whenever setting a background image, be sure to explicitly define a `background-repeat` value. Learn more: https://defensivecss.dev/tip/bg-repeat/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 1 ].line ).toEqual( 9 );
 		expect( warnings[ 1 ].column ).toEqual( 2 );
-		expect( warnings[ 1 ].text ).toEqual( 'Ensure a background-repeat property is defined when using a background image. (plugin/use-defensive-css)' );
+		expect( warnings[ 1 ].text ).toEqual( 'Whenever setting a background image, be sure to explicitly define a `background-repeat` value. Learn more: https://defensivecss.dev/tip/bg-repeat/ (plugin/use-defensive-css)' );
 	} );
 
 	test( 'Should error if hover affects mobile devices.', async () => {
@@ -41,15 +41,15 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( warnings[ 0 ].line ).toEqual( 4 );
 		expect( warnings[ 0 ].column ).toEqual( 1 );
-		expect( warnings[ 0 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap `:hover` selectors inside a `@media (hover: hover) { ...your styles }` query. Learn more: https://defensivecss.dev/tip/hover-media/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 1 ].line ).toEqual( 9 );
 		expect( warnings[ 1 ].column ).toEqual( 2 );
-		expect( warnings[ 1 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
+		expect( warnings[ 1 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap `:hover` selectors inside a `@media (hover: hover) { ...your styles }` query. Learn more: https://defensivecss.dev/tip/hover-media/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 2 ].line ).toEqual( 16 );
 		expect( warnings[ 2 ].column ).toEqual( 3 );
-		expect( warnings[ 2 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap :hover selectors inside a @media (hover: hover) { ...your styles } query. (plugin/use-defensive-css)' );
+		expect( warnings[ 2 ].text ).toEqual( 'To prevent accidental hover states on mobile devices, wrap `:hover` selectors inside a `@media (hover: hover) { ...your styles }` query. Learn more: https://defensivecss.dev/tip/hover-media/ (plugin/use-defensive-css)' );
 	} );
 
 
@@ -67,7 +67,7 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		warnings.forEach( warning => {
 			expect( warning.column ).toEqual( 2 );
-			expect( warning.text ).toEqual( 'Ensure that any custom properties have a fallback value. (plugin/use-defensive-css)' );
+			expect( warning.text ).toEqual( 'Provide a fallback value for a custom property like `var(--your-custom-property, #000000)` to prevent issues in the event the custom property is not defined. Learn more: https://defensivecss.dev/tip/css-variable-fallback/ (plugin/use-defensive-css)' );
 		} );
 
 		expect( warnings[ 0 ].line ).toEqual( 7 );
@@ -91,15 +91,15 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( warnings[ 0 ].line ).toEqual( 5 );
 		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Flex rows must have a `flex-wrap` value defined.` (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].text ).toEqual( 'Whenever setting an element to `display: flex` a `flex-wrap` value must be defined. Set `flex-wrap: nowrap` for the default behavior. Learn more: https://defensivecss.dev/tip/flexbox-wrapping/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 1 ].line ).toEqual( 9 );
 		expect( warnings[ 1 ].column ).toEqual( 2 );
-		expect( warnings[ 1 ].text ).toEqual( 'Flex rows must have a `flex-wrap` value defined.` (plugin/use-defensive-css)' );
+		expect( warnings[ 1 ].text ).toEqual( 'Whenever setting an element to `display: flex` a `flex-wrap` value must be defined. Set `flex-wrap: nowrap` for the default behavior. Learn more: https://defensivecss.dev/tip/flexbox-wrapping/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 2 ].line ).toEqual( 14 );
 		expect( warnings[ 2 ].column ).toEqual( 2 );
-		expect( warnings[ 2 ].text ).toEqual( 'Flex rows must have a `flex-wrap` value defined.` (plugin/use-defensive-css)' );
+		expect( warnings[ 2 ].text ).toEqual( 'Whenever setting an element to `display: flex` a `flex-wrap` value must be defined. Set `flex-wrap: nowrap` for the default behavior. Learn more: https://defensivecss.dev/tip/flexbox-wrapping/ (plugin/use-defensive-css)' );
 	} );
 
 	test( 'Should error if overscroll-behavior is not defined.', async () => {
@@ -116,15 +116,15 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( warnings[ 0 ].line ).toEqual( 5 );
 		expect( warnings[ 0 ].column ).toEqual( 2 );
-		expect( warnings[ 0 ].text ).toEqual( 'Containers with an auto or scroll \'overflow\' must also have an \'overscroll-behavior\' property defined. (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].text ).toEqual( 'To prevent scroll chaining between contexts, any container with a scrollable overflow must have a `overscroll-behavior` value defined. Learn more: https://defensivecss.dev/tip/scroll-chain/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 1 ].line ).toEqual( 9 );
 		expect( warnings[ 1 ].column ).toEqual( 2 );
-		expect( warnings[ 1 ].text ).toEqual( 'Containers with an auto or scroll \'overflow\' must also have an \'overscroll-behavior\' property defined. (plugin/use-defensive-css)' );
+		expect( warnings[ 1 ].text ).toEqual( 'To prevent scroll chaining between contexts, any container with a scrollable overflow must have a `overscroll-behavior` value defined. Learn more: https://defensivecss.dev/tip/scroll-chain/ (plugin/use-defensive-css)' );
 
 		expect( warnings[ 2 ].line ).toEqual( 13 );
 		expect( warnings[ 2 ].column ).toEqual( 2 );
-		expect( warnings[ 2 ].text ).toEqual( 'Containers with an auto or scroll \'overflow\' must also have an \'overscroll-behavior\' property defined. (plugin/use-defensive-css)' );
+		expect( warnings[ 2 ].text ).toEqual( 'To prevent scroll chaining between contexts, any container with a scrollable overflow must have a `overscroll-behavior` value defined. Learn more: https://defensivecss.dev/tip/scroll-chain/ (plugin/use-defensive-css)' );
 	} );
 
 	test( 'Should error if vendor prefixes are grouped together.', async () => {
@@ -141,7 +141,7 @@ describe( 'Stylelint Plugin Defensive CSS', () => {
 
 		expect( warnings[ 0 ].line ).toEqual( 4 );
 		expect( warnings[ 0 ].column ).toEqual( 1 );
-		expect( warnings[ 0 ].text ).toEqual( 'Separate different vendor prefixes into their own rules. (plugin/use-defensive-css)' );
+		expect( warnings[ 0 ].text ).toEqual( 'To prevent invalid rules in unsupported environments, split each vendor prefix into its own, individual rule. Learn more: https://defensivecss.dev/tip/grouping-selectors/ (plugin/use-defensive-css)' );
 	} );
 
 } );

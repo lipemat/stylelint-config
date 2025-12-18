@@ -17,6 +17,14 @@ module.exports = {
 				'ignore': [ 'after-comment' ]
 			}
 		],
+		'at-rule-no-unknown': [
+			true,
+			{
+				'ignoreAtRules': [
+					'starting-style',
+				]
+			}
+		],
 		'comment-empty-line-before': null,
 		'declaration-colon-newline-after': null,
 		'function-parentheses-space-inside': null,
