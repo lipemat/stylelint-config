@@ -1,0 +1,9 @@
+.background {
+	@starting-style {
+		opacity: 0;
+	}
+
+	@unknown {
+		color: #fff;
+	}
+}
