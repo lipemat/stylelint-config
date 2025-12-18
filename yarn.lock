@@ -724,7 +724,7 @@ __metadata:
     stylelint-plugin-defensive-css: "npm:^0.10.4"
     typescript: "npm:^5.9.3"
   peerDependencies:
-    stylelint: ^15.11.0
+    stylelint: ^14.2
   languageName: unknown
   linkType: soft
 
