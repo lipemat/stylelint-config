@@ -1,10 +1,21 @@
 'use strict';
 
 module.exports = {
-	'extends': '@wordpress/stylelint-config',
+	'extends': [
+		'@wordpress/stylelint-config',
+		"stylelint-config-html/svelte"
+	],
 	'plugins': [
 		'stylelint-order',
 		'stylelint-plugin-defensive-css'
+	],
+	'overrides': [
+		{
+			'files': ['*.svelte', '**/*.svelte'],
+			'rules': {
+				'no-empty-source': null
+			}
+		}
 	],
 	'rules': {
 		'at-rule-empty-line-before': [

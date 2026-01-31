@@ -720,6 +720,7 @@ __metadata:
     jest: "npm:^29.5.0"
     jest-preset-stylelint: "npm:^6.1.0"
     stylelint: "npm:^14.16.1"
+    stylelint-config-html: "npm:^1.1.0"
     stylelint-order: "npm:^6.0.4"
     stylelint-plugin-defensive-css: "npm:^0.10.4"
     typescript: "npm:^5.9.3"
@@ -3833,6 +3834,16 @@ __metadata:
   version: 0.1.0
   resolution: "style-search@npm:0.1.0"
   checksum: 10/841049768c863737389558fafffa0b765f553bde041b7997c4cd54606b64b0d139936e2efee74dc1ce59fcde78aaa88484d9894838c31d5c98c1ccace312a59b
+  languageName: node
+  linkType: hard
+
+"stylelint-config-html@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "stylelint-config-html@npm:1.1.0"
+  peerDependencies:
+    postcss-html: ^1.0.0
+    stylelint: ">=14.0.0"
+  checksum: 10/d1b01043bcb07e33f826a59a0a22db762c07930d68e2c2c3a538aa8b0e02dc64b44abbb40e9a7583e053c04bbf18b167cbb1b714e343ef5bbe68b96860273480
   languageName: node
   linkType: hard
 
