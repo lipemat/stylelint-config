@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@wordpress/stylelint-config": "^21.13.0",
+    "postcss-html": "^1.8.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-order": "^6.0.4",
     "stylelint-plugin-defensive-css": "^0.10.4"

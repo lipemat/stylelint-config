@@ -35,6 +35,7 @@ const RAW_RUNTIME_STATE =
           ["import-local", "npm:3.2.0"],\
           ["jest", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:29.7.0"],\
           ["jest-preset-stylelint", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:6.3.2"],\
+          ["postcss-html", "npm:1.8.1"],\
           ["stylelint", "npm:14.16.1"],\
           ["stylelint-config-html", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:1.1.0"],\
           ["stylelint-order", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:6.0.4"],\
@@ -1264,6 +1265,7 @@ const RAW_RUNTIME_STATE =
           ["import-local", "npm:3.2.0"],\
           ["jest", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:29.7.0"],\
           ["jest-preset-stylelint", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:6.3.2"],\
+          ["postcss-html", "npm:1.8.1"],\
           ["stylelint", "npm:14.16.1"],\
           ["stylelint-config-html", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:1.1.0"],\
           ["stylelint-order", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:6.0.4"],\
@@ -2236,6 +2238,49 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dom-serializer", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/dom-serializer-npm-2.0.0-378ebc7200-e3bf9027a6.zip/node_modules/dom-serializer/",\
+        "packageDependencies": [\
+          ["dom-serializer", "npm:2.0.0"],\
+          ["domelementtype", "npm:2.3.0"],\
+          ["domhandler", "npm:5.0.3"],\
+          ["entities", "npm:4.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["domelementtype", [\
+      ["npm:2.3.0", {\
+        "packageLocation": "./.yarn/cache/domelementtype-npm-2.3.0-02de7cbfba-ee837a318f.zip/node_modules/domelementtype/",\
+        "packageDependencies": [\
+          ["domelementtype", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["domhandler", [\
+      ["npm:5.0.3", {\
+        "packageLocation": "./.yarn/cache/domhandler-npm-5.0.3-3ede73dc10-809b805a50.zip/node_modules/domhandler/",\
+        "packageDependencies": [\
+          ["domelementtype", "npm:2.3.0"],\
+          ["domhandler", "npm:5.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["domutils", [\
+      ["npm:3.2.2", {\
+        "packageLocation": "./.yarn/cache/domutils-npm-3.2.2-290180a284-2e08842151.zip/node_modules/domutils/",\
+        "packageDependencies": [\
+          ["dom-serializer", "npm:2.0.0"],\
+          ["domelementtype", "npm:2.3.0"],\
+          ["domhandler", "npm:5.0.3"],\
+          ["domutils", "npm:3.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["electron-to-chromium", [\
       ["npm:1.5.267", {\
         "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.5.267-b62f38d65a-05e55e810c.zip/node_modules/electron-to-chromium/",\
@@ -2269,6 +2314,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["encoding", "npm:0.1.13"],\
           ["iconv-lite", "npm:0.6.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["entities", [\
+      ["npm:4.5.0", {\
+        "packageLocation": "./.yarn/cache/entities-npm-4.5.0-7cdb83b832-ede2a35c9b.zip/node_modules/entities/",\
+        "packageDependencies": [\
+          ["entities", "npm:4.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2745,6 +2799,19 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/html-tags-npm-3.3.1-c8f411791b-d0e808544b.zip/node_modules/html-tags/",\
         "packageDependencies": [\
           ["html-tags", "npm:3.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["htmlparser2", [\
+      ["npm:8.0.2", {\
+        "packageLocation": "./.yarn/cache/htmlparser2-npm-8.0.2-5d9f901bb6-ea5512956e.zip/node_modules/htmlparser2/",\
+        "packageDependencies": [\
+          ["domelementtype", "npm:2.3.0"],\
+          ["domhandler", "npm:5.0.3"],\
+          ["domutils", "npm:3.2.2"],\
+          ["entities", "npm:4.5.0"],\
+          ["htmlparser2", "npm:8.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3631,6 +3698,13 @@ const RAW_RUNTIME_STATE =
           ["js-tokens", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:9.0.1", {\
+        "packageLocation": "./.yarn/cache/js-tokens-npm-9.0.1-3ed793c0c1-3288ba73bb.zip/node_modules/js-tokens/",\
+        "packageDependencies": [\
+          ["js-tokens", "npm:9.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["js-yaml", [\
@@ -4356,6 +4430,29 @@ const RAW_RUNTIME_STATE =
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.5.8", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.8-b010bee8df-cbacbfd7f7.zip/node_modules/postcss/",\
+        "packageDependencies": [\
+          ["nanoid", "npm:3.3.11"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["postcss", "npm:8.5.8"],\
+          ["source-map-js", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["postcss-html", [\
+      ["npm:1.8.1", {\
+        "packageLocation": "./.yarn/cache/postcss-html-npm-1.8.1-cbb55334aa-c218bb56ee.zip/node_modules/postcss-html/",\
+        "packageDependencies": [\
+          ["htmlparser2", "npm:8.0.2"],\
+          ["js-tokens", "npm:9.0.1"],\
+          ["postcss", "npm:8.5.8"],\
+          ["postcss-html", "npm:1.8.1"],\
+          ["postcss-safe-parser", "virtual:cbb55334aab7798534dbe280c41d58a43c4110b3367c7779bb18f6644cf29adad2ab31f8d8258f7374ab687862ab8699591169da24b1ddddf6c2b878a8100913#npm:6.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["postcss-media-query-parser", [\
@@ -4390,6 +4487,19 @@ const RAW_RUNTIME_STATE =
           ["@types/postcss", null],\
           ["postcss", "npm:8.5.6"],\
           ["postcss-safe-parser", "virtual:518d76e9e5343bed9e4eae81ab3a73e9102a9f4b9b4877e2b37b5deee86113f72e6325506ac9ade4c434da4d0ea20c3c403a851dbed4a0c876704828c1008505#npm:6.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/postcss",\
+          "postcss"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:cbb55334aab7798534dbe280c41d58a43c4110b3367c7779bb18f6644cf29adad2ab31f8d8258f7374ab687862ab8699591169da24b1ddddf6c2b878a8100913#npm:6.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/postcss-safe-parser-virtual-58135ae98d/0/cache/postcss-safe-parser-npm-6.0.0-dd01bffb52-06c733eaad.zip/node_modules/postcss-safe-parser/",\
+        "packageDependencies": [\
+          ["@types/postcss", null],\
+          ["postcss", "npm:8.5.8"],\
+          ["postcss-safe-parser", "virtual:cbb55334aab7798534dbe280c41d58a43c4110b3367c7779bb18f6644cf29adad2ab31f8d8258f7374ab687862ab8699591169da24b1ddddf6c2b878a8100913#npm:6.0.0"]\
         ],\
         "packagePeers": [\
           "@types/postcss",\
@@ -5039,7 +5149,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/postcss-html", null],\
           ["@types/stylelint", null],\
-          ["postcss-html", null],\
+          ["postcss-html", "npm:1.8.1"],\
           ["stylelint", "npm:14.16.1"],\
           ["stylelint-config-html", "virtual:7d39a94511259d0d6c408723bc07edb436865b6113fa154ce72d1f5dce50a02046b24767f5e371e4f17e25cbeabadeab93dd4a31fcc8491dedd981f380e3fd33#npm:1.1.0"]\
         ],\
