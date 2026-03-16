@@ -94,6 +94,7 @@ module.exports = {
 			{
 				'ignorePseudoClasses': [
 					'global',
+					'local',
 				],
 			},
 		],
